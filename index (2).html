@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Island Airlines — Prenota il tuo volo</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Island Airlines</div>
+        <nav class="navbar">
+            <a href="#voli">Voli</a>
+            <a href="#checkin">Check-in</a>
+            <a href="#skymate">Skymate™</a>
+            <a href="#offerte">Offerte</a>
+            <button class="prenota-btn">Prenota Ora</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Benvenuto a bordo</h1>
+            <p>Prenota voli intelligenti con <span class="skymate-badge">powered by Skymate™</span></p>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Da: es. Bologna">
+            <input type="text" placeholder="A: es. Catania">
+            <input type="date">
+            <input type="date">
+            <button>Cerca Voli</button>
+        </div>
+    </section>
+
+    <section id="skymate" class="skymate-section">
+        <div class="chat-container">
+            <div class="chat-header">💡 Skymate™ AI</div>
+            <div id="chat-log" class="chat-log"></div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Scrivi la tua domanda...">
+                <button onclick="sendMessage()">Invia</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="offerte" class="offers">
+        <h2>Offerte Speciali</h2>
+        <div class="offer-list">
+            <div class="offer-card">
+                <h3>Bologna → Catania</h3>
+                <p>da €95</p>
+                <button>Prenota</button>
+            </div>
+            <div class="offer-card">
+                <h3>Catania → Bologna</h3>
+                <p>da €30</p>
+                <button>Prenota</button>
+            </div>
+            <!-- Altri voli -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Island Airlines — Tutti i diritti riservati</p>
+        <p><span class="skymate-badge">powered by Skymate™</span></p>
+    </footer>
+
+<script src="chat.js"></script>
+</body>
+</html>

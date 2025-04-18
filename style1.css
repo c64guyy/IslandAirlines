@@ -1,0 +1,193 @@
+/* === Island Airlines: Style CSS === */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0f;
+    color: #e4e4e4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #12121a;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #7b2ff7;
+    font-weight: bold;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #7b2ff7;
+}
+
+.prenota-btn {
+    background-color: #7b2ff7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.prenota-btn:hover {
+    transform: scale(1.05);
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px 40px 20px;
+    background: linear-gradient(120deg, #0a0a0f 0%, #1a0e2a 100%);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.skymate-badge {
+    color: #7b2ff7;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.search-box input, .search-box button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+}
+
+.search-box button {
+    background: #7b2ff7;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search-box button:hover {
+    transform: scale(1.05);
+}
+
+/* Skymate Chat */
+.chat-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    background: #12121a;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(123, 47, 247, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: #7b2ff7;
+    padding: 15px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-log {
+    padding: 20px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #333;
+}
+
+.chat-input input {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    background: #1c1c28;
+    color: #e4e4e4;
+    border-bottom-left-radius: 20px;
+}
+
+.chat-input button {
+    padding: 15px 20px;
+    background: #7b2ff7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-bottom-right-radius: 20px;
+}
+
+/* Offerte */
+.offers {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.offer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offer-card {
+    background: #12121a;
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 220px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(123, 47, 247, 0.5);
+}
+
+.offer-card button {
+    background: #7b2ff7;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #12121a;
+    font-size: 0.9em;
+    color: #7b2ff7;
+}
